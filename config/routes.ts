@@ -22,12 +22,41 @@ export default [
       },
     ],
   },
-  {
-    path: '/welcome',
-    name: 'welcome',
-    icon: 'smile',
-    component: './Welcome',
-  },
+  // {
+  //   path: '/welcome',
+  //   name: 'welcome',
+  //   icon: 'smile',
+  //   component: './Welcome',
+  // },
+  // {
+  //   path: '/dashboard',
+  //   name: 'dashboard',
+  //   icon: 'dashboard',
+  //   routes: [
+  //     {
+  //       path: '/dashboard',
+  //       redirect: '/Dashboard/analysis',
+  //     },
+  //     {
+  //       name: 'analysis',
+  //       icon: 'smile',
+  //       path: '/dashboard/analysis',
+  //       component: './Dashboard/analysis',
+  //     },
+  //     {
+  //       name: 'monitor',
+  //       icon: 'smile',
+  //       path: '/dashboard/monitor',
+  //       component: './Dashboard/monitor',
+  //     },
+  //     {
+  //       name: 'workplace',
+  //       icon: 'smile',
+  //       path: '/dashboard/workplace',
+  //       component: './Dashboard/workplace',
+  //     },
+  //   ],
+  // },
   // {
   //   path: '/admin',
   //   name: 'admin',
@@ -53,31 +82,31 @@ export default [
   // },
   {
     path: '/',
-    redirect: '/welcome',
+    redirect: '/cluster-info',
   },
   {
     name: 'cluster-info',
     path: '/cluster-info',
     icon: 'alertOutlined',
-    component: './ClusterInfo'
+    component: './ClusterInfo',
   },
   {
     name: 'cluster-management',
     path: '/cluster-management',
     icon: 'alertOutlined',
-    component: './ClusterManagement'
+    component: './ClusterManagement',
   },
   {
     name: 'cluster-folders',
     path: '/cluster-folders',
     icon: 'alertOutlined',
-    component: './Welcome'
+    component: './Folders',
   },
   {
     name: 'cluster-metrics',
     path: '/cluster-metrics',
     icon: 'alertOutlined',
-    component: './Welcome'
+    component: './ClusterMetrics/ClusterMetrics',
   },
   {
     path: '*',
